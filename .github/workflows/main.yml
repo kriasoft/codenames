@@ -1,0 +1,34 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # https://github.com/oven-sh/setup-bun
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      # https://github.com/actions/cache
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.bun/install/cache
+          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lock') }}
+
+      - run: bun install --frozen-lockfile
+
+      - run: bun prettier --check .
+
+      - run: bun eslint .
+
+      - run: bun test

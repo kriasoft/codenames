@@ -1,0 +1,521 @@
+{
+  "name": "codenames",
+  "version": "1.0.0",
+  "description": "Converts numerical values into human-readable names following a specific theme (e.g., cities)",
+  "license": "MIT",
+  "author": "Konstantin Tarkus <hello@kriasoft.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kriasoft/codenames.git"
+  },
+  "homepage": "https://github.com/kriasoft/codenames#readme",
+  "bugs": "https://github.com/kriasoft/codenames/issues",
+  "keywords": [
+    "codenames",
+    "codename",
+    "human-readable",
+    "identifier",
+    "number-to-name",
+    "name-generator",
+    "themed-names",
+    "themed",
+    "preview-environments",
+    "deployment-names",
+    "url-friendly",
+    "deterministic",
+    "hash",
+    "slug",
+    "slug-generator",
+    "generator",
+    "cli"
+  ],
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "bun": "./index.ts",
+      "deno": "./index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./adjectives": {
+      "bun": "./words/adjectives-20.ts",
+      "deno": "./words/adjectives-20.ts",
+      "types": "./dist/adjectives-20.d.ts",
+      "import": "./dist/adjectives-20.js"
+    },
+    "./adjectives-10": {
+      "bun": "./words/adjectives-10.ts",
+      "deno": "./words/adjectives-10.ts",
+      "types": "./dist/adjectives-10.d.ts",
+      "import": "./dist/adjectives-10.js"
+    },
+    "./adjectives-20": {
+      "bun": "./words/adjectives-20.ts",
+      "deno": "./words/adjectives-20.ts",
+      "types": "./dist/adjectives-20.d.ts",
+      "import": "./dist/adjectives-20.js"
+    },
+    "./adjectives-30": {
+      "bun": "./words/adjectives-30.ts",
+      "deno": "./words/adjectives-30.ts",
+      "types": "./dist/adjectives-30.d.ts",
+      "import": "./dist/adjectives-30.js"
+    },
+    "./adjectives-50": {
+      "bun": "./words/adjectives-50.ts",
+      "deno": "./words/adjectives-50.ts",
+      "types": "./dist/adjectives-50.d.ts",
+      "import": "./dist/adjectives-50.js"
+    },
+    "./adjectives-100": {
+      "bun": "./words/adjectives-100.ts",
+      "deno": "./words/adjectives-100.ts",
+      "types": "./dist/adjectives-100.d.ts",
+      "import": "./dist/adjectives-100.js"
+    },
+    "./animals": {
+      "bun": "./words/animals-20.ts",
+      "deno": "./words/animals-20.ts",
+      "types": "./dist/animals-20.d.ts",
+      "import": "./dist/animals-20.js"
+    },
+    "./animals-10": {
+      "bun": "./words/animals-10.ts",
+      "deno": "./words/animals-10.ts",
+      "types": "./dist/animals-10.d.ts",
+      "import": "./dist/animals-10.js"
+    },
+    "./animals-20": {
+      "bun": "./words/animals-20.ts",
+      "deno": "./words/animals-20.ts",
+      "types": "./dist/animals-20.d.ts",
+      "import": "./dist/animals-20.js"
+    },
+    "./animals-30": {
+      "bun": "./words/animals-30.ts",
+      "deno": "./words/animals-30.ts",
+      "types": "./dist/animals-30.d.ts",
+      "import": "./dist/animals-30.js"
+    },
+    "./animals-50": {
+      "bun": "./words/animals-50.ts",
+      "deno": "./words/animals-50.ts",
+      "types": "./dist/animals-50.d.ts",
+      "import": "./dist/animals-50.js"
+    },
+    "./animals-100": {
+      "bun": "./words/animals-100.ts",
+      "deno": "./words/animals-100.ts",
+      "types": "./dist/animals-100.d.ts",
+      "import": "./dist/animals-100.js"
+    },
+    "./cities": {
+      "bun": "./words/cities-20.ts",
+      "deno": "./words/cities-20.ts",
+      "types": "./dist/cities-20.d.ts",
+      "import": "./dist/cities-20.js"
+    },
+    "./cities-10": {
+      "bun": "./words/cities-10.ts",
+      "deno": "./words/cities-10.ts",
+      "types": "./dist/cities-10.d.ts",
+      "import": "./dist/cities-10.js"
+    },
+    "./cities-20": {
+      "bun": "./words/cities-20.ts",
+      "deno": "./words/cities-20.ts",
+      "types": "./dist/cities-20.d.ts",
+      "import": "./dist/cities-20.js"
+    },
+    "./cities-30": {
+      "bun": "./words/cities-30.ts",
+      "deno": "./words/cities-30.ts",
+      "types": "./dist/cities-30.d.ts",
+      "import": "./dist/cities-30.js"
+    },
+    "./cities-50": {
+      "bun": "./words/cities-50.ts",
+      "deno": "./words/cities-50.ts",
+      "types": "./dist/cities-50.d.ts",
+      "import": "./dist/cities-50.js"
+    },
+    "./cities-100": {
+      "bun": "./words/cities-100.ts",
+      "deno": "./words/cities-100.ts",
+      "types": "./dist/cities-100.d.ts",
+      "import": "./dist/cities-100.js"
+    },
+    "./clothing": {
+      "bun": "./words/clothing-20.ts",
+      "deno": "./words/clothing-20.ts",
+      "types": "./dist/clothing-20.d.ts",
+      "import": "./dist/clothing-20.js"
+    },
+    "./clothing-10": {
+      "bun": "./words/clothing-10.ts",
+      "deno": "./words/clothing-10.ts",
+      "types": "./dist/clothing-10.d.ts",
+      "import": "./dist/clothing-10.js"
+    },
+    "./clothing-20": {
+      "bun": "./words/clothing-20.ts",
+      "deno": "./words/clothing-20.ts",
+      "types": "./dist/clothing-20.d.ts",
+      "import": "./dist/clothing-20.js"
+    },
+    "./clothing-30": {
+      "bun": "./words/clothing-30.ts",
+      "deno": "./words/clothing-30.ts",
+      "types": "./dist/clothing-30.d.ts",
+      "import": "./dist/clothing-30.js"
+    },
+    "./clothing-50": {
+      "bun": "./words/clothing-50.ts",
+      "deno": "./words/clothing-50.ts",
+      "types": "./dist/clothing-50.d.ts",
+      "import": "./dist/clothing-50.js"
+    },
+    "./clothing-100": {
+      "bun": "./words/clothing-100.ts",
+      "deno": "./words/clothing-100.ts",
+      "types": "./dist/clothing-100.d.ts",
+      "import": "./dist/clothing-100.js"
+    },
+    "./colors": {
+      "bun": "./words/colors-20.ts",
+      "deno": "./words/colors-20.ts",
+      "types": "./dist/colors-20.d.ts",
+      "import": "./dist/colors-20.js"
+    },
+    "./colors-10": {
+      "bun": "./words/colors-10.ts",
+      "deno": "./words/colors-10.ts",
+      "types": "./dist/colors-10.d.ts",
+      "import": "./dist/colors-10.js"
+    },
+    "./colors-20": {
+      "bun": "./words/colors-20.ts",
+      "deno": "./words/colors-20.ts",
+      "types": "./dist/colors-20.d.ts",
+      "import": "./dist/colors-20.js"
+    },
+    "./colors-30": {
+      "bun": "./words/colors-30.ts",
+      "deno": "./words/colors-30.ts",
+      "types": "./dist/colors-30.d.ts",
+      "import": "./dist/colors-30.js"
+    },
+    "./colors-50": {
+      "bun": "./words/colors-50.ts",
+      "deno": "./words/colors-50.ts",
+      "types": "./dist/colors-50.d.ts",
+      "import": "./dist/colors-50.js"
+    },
+    "./colors-100": {
+      "bun": "./words/colors-100.ts",
+      "deno": "./words/colors-100.ts",
+      "types": "./dist/colors-100.d.ts",
+      "import": "./dist/colors-100.js"
+    },
+    "./countries": {
+      "bun": "./words/countries-20.ts",
+      "deno": "./words/countries-20.ts",
+      "types": "./dist/countries-20.d.ts",
+      "import": "./dist/countries-20.js"
+    },
+    "./countries-10": {
+      "bun": "./words/countries-10.ts",
+      "deno": "./words/countries-10.ts",
+      "types": "./dist/countries-10.d.ts",
+      "import": "./dist/countries-10.js"
+    },
+    "./countries-20": {
+      "bun": "./words/countries-20.ts",
+      "deno": "./words/countries-20.ts",
+      "types": "./dist/countries-20.d.ts",
+      "import": "./dist/countries-20.js"
+    },
+    "./countries-30": {
+      "bun": "./words/countries-30.ts",
+      "deno": "./words/countries-30.ts",
+      "types": "./dist/countries-30.d.ts",
+      "import": "./dist/countries-30.js"
+    },
+    "./countries-50": {
+      "bun": "./words/countries-50.ts",
+      "deno": "./words/countries-50.ts",
+      "types": "./dist/countries-50.d.ts",
+      "import": "./dist/countries-50.js"
+    },
+    "./countries-100": {
+      "bun": "./words/countries-100.ts",
+      "deno": "./words/countries-100.ts",
+      "types": "./dist/countries-100.d.ts",
+      "import": "./dist/countries-100.js"
+    },
+    "./elements": {
+      "bun": "./words/elements-20.ts",
+      "deno": "./words/elements-20.ts",
+      "types": "./dist/elements-20.d.ts",
+      "import": "./dist/elements-20.js"
+    },
+    "./elements-10": {
+      "bun": "./words/elements-10.ts",
+      "deno": "./words/elements-10.ts",
+      "types": "./dist/elements-10.d.ts",
+      "import": "./dist/elements-10.js"
+    },
+    "./elements-20": {
+      "bun": "./words/elements-20.ts",
+      "deno": "./words/elements-20.ts",
+      "types": "./dist/elements-20.d.ts",
+      "import": "./dist/elements-20.js"
+    },
+    "./elements-30": {
+      "bun": "./words/elements-30.ts",
+      "deno": "./words/elements-30.ts",
+      "types": "./dist/elements-30.d.ts",
+      "import": "./dist/elements-30.js"
+    },
+    "./elements-50": {
+      "bun": "./words/elements-50.ts",
+      "deno": "./words/elements-50.ts",
+      "types": "./dist/elements-50.d.ts",
+      "import": "./dist/elements-50.js"
+    },
+    "./elements-100": {
+      "bun": "./words/elements-100.ts",
+      "deno": "./words/elements-100.ts",
+      "types": "./dist/elements-100.d.ts",
+      "import": "./dist/elements-100.js"
+    },
+    "./emotions": {
+      "bun": "./words/emotions-20.ts",
+      "deno": "./words/emotions-20.ts",
+      "types": "./dist/emotions-20.d.ts",
+      "import": "./dist/emotions-20.js"
+    },
+    "./emotions-10": {
+      "bun": "./words/emotions-10.ts",
+      "deno": "./words/emotions-10.ts",
+      "types": "./dist/emotions-10.d.ts",
+      "import": "./dist/emotions-10.js"
+    },
+    "./emotions-20": {
+      "bun": "./words/emotions-20.ts",
+      "deno": "./words/emotions-20.ts",
+      "types": "./dist/emotions-20.d.ts",
+      "import": "./dist/emotions-20.js"
+    },
+    "./emotions-30": {
+      "bun": "./words/emotions-30.ts",
+      "deno": "./words/emotions-30.ts",
+      "types": "./dist/emotions-30.d.ts",
+      "import": "./dist/emotions-30.js"
+    },
+    "./emotions-50": {
+      "bun": "./words/emotions-50.ts",
+      "deno": "./words/emotions-50.ts",
+      "types": "./dist/emotions-50.d.ts",
+      "import": "./dist/emotions-50.js"
+    },
+    "./emotions-100": {
+      "bun": "./words/emotions-100.ts",
+      "deno": "./words/emotions-100.ts",
+      "types": "./dist/emotions-100.d.ts",
+      "import": "./dist/emotions-100.js"
+    },
+    "./food": {
+      "bun": "./words/food-20.ts",
+      "deno": "./words/food-20.ts",
+      "types": "./dist/food-20.d.ts",
+      "import": "./dist/food-20.js"
+    },
+    "./food-10": {
+      "bun": "./words/food-10.ts",
+      "deno": "./words/food-10.ts",
+      "types": "./dist/food-10.d.ts",
+      "import": "./dist/food-10.js"
+    },
+    "./food-20": {
+      "bun": "./words/food-20.ts",
+      "deno": "./words/food-20.ts",
+      "types": "./dist/food-20.d.ts",
+      "import": "./dist/food-20.js"
+    },
+    "./food-30": {
+      "bun": "./words/food-30.ts",
+      "deno": "./words/food-30.ts",
+      "types": "./dist/food-30.d.ts",
+      "import": "./dist/food-30.js"
+    },
+    "./food-50": {
+      "bun": "./words/food-50.ts",
+      "deno": "./words/food-50.ts",
+      "types": "./dist/food-50.d.ts",
+      "import": "./dist/food-50.js"
+    },
+    "./food-100": {
+      "bun": "./words/food-100.ts",
+      "deno": "./words/food-100.ts",
+      "types": "./dist/food-100.d.ts",
+      "import": "./dist/food-100.js"
+    },
+    "./gems": {
+      "bun": "./words/gems-20.ts",
+      "deno": "./words/gems-20.ts",
+      "types": "./dist/gems-20.d.ts",
+      "import": "./dist/gems-20.js"
+    },
+    "./gems-10": {
+      "bun": "./words/gems-10.ts",
+      "deno": "./words/gems-10.ts",
+      "types": "./dist/gems-10.d.ts",
+      "import": "./dist/gems-10.js"
+    },
+    "./gems-20": {
+      "bun": "./words/gems-20.ts",
+      "deno": "./words/gems-20.ts",
+      "types": "./dist/gems-20.d.ts",
+      "import": "./dist/gems-20.js"
+    },
+    "./gems-30": {
+      "bun": "./words/gems-30.ts",
+      "deno": "./words/gems-30.ts",
+      "types": "./dist/gems-30.d.ts",
+      "import": "./dist/gems-30.js"
+    },
+    "./gems-50": {
+      "bun": "./words/gems-50.ts",
+      "deno": "./words/gems-50.ts",
+      "types": "./dist/gems-50.d.ts",
+      "import": "./dist/gems-50.js"
+    },
+    "./gems-100": {
+      "bun": "./words/gems-100.ts",
+      "deno": "./words/gems-100.ts",
+      "types": "./dist/gems-100.d.ts",
+      "import": "./dist/gems-100.js"
+    },
+    "./nature": {
+      "bun": "./words/nature-20.ts",
+      "deno": "./words/nature-20.ts",
+      "types": "./dist/nature-20.d.ts",
+      "import": "./dist/nature-20.js"
+    },
+    "./nature-10": {
+      "bun": "./words/nature-10.ts",
+      "deno": "./words/nature-10.ts",
+      "types": "./dist/nature-10.d.ts",
+      "import": "./dist/nature-10.js"
+    },
+    "./nature-20": {
+      "bun": "./words/nature-20.ts",
+      "deno": "./words/nature-20.ts",
+      "types": "./dist/nature-20.d.ts",
+      "import": "./dist/nature-20.js"
+    },
+    "./nature-30": {
+      "bun": "./words/nature-30.ts",
+      "deno": "./words/nature-30.ts",
+      "types": "./dist/nature-30.d.ts",
+      "import": "./dist/nature-30.js"
+    },
+    "./nature-50": {
+      "bun": "./words/nature-50.ts",
+      "deno": "./words/nature-50.ts",
+      "types": "./dist/nature-50.d.ts",
+      "import": "./dist/nature-50.js"
+    },
+    "./nature-100": {
+      "bun": "./words/nature-100.ts",
+      "deno": "./words/nature-100.ts",
+      "types": "./dist/nature-100.d.ts",
+      "import": "./dist/nature-100.js"
+    },
+    "./snacks": {
+      "bun": "./words/snacks-20.ts",
+      "deno": "./words/snacks-20.ts",
+      "types": "./dist/snacks-20.d.ts",
+      "import": "./dist/snacks-20.js"
+    },
+    "./snacks-10": {
+      "bun": "./words/snacks-10.ts",
+      "deno": "./words/snacks-10.ts",
+      "types": "./dist/snacks-10.d.ts",
+      "import": "./dist/snacks-10.js"
+    },
+    "./snacks-20": {
+      "bun": "./words/snacks-20.ts",
+      "deno": "./words/snacks-20.ts",
+      "types": "./dist/snacks-20.d.ts",
+      "import": "./dist/snacks-20.js"
+    },
+    "./snacks-30": {
+      "bun": "./words/snacks-30.ts",
+      "deno": "./words/snacks-30.ts",
+      "types": "./dist/snacks-30.d.ts",
+      "import": "./dist/snacks-30.js"
+    },
+    "./snacks-50": {
+      "bun": "./words/snacks-50.ts",
+      "deno": "./words/snacks-50.ts",
+      "types": "./dist/snacks-50.d.ts",
+      "import": "./dist/snacks-50.js"
+    },
+    "./snacks-100": {
+      "bun": "./words/snacks-100.ts",
+      "deno": "./words/snacks-100.ts",
+      "types": "./dist/snacks-100.d.ts",
+      "import": "./dist/snacks-100.js"
+    },
+    "./package": "./package.json"
+  },
+  "files": [
+    "dist",
+    "words/*.ts",
+    "package.json",
+    "cli.ts",
+    "index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "bin": {
+    "codenames": "./dist/cli.js",
+    "cn": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "@types/bun": "^1.2.19",
+    "eslint": "^9.31.0",
+    "jiti": "^2.4.2",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.38.0"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "semi": true,
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "useTabs": false,
+    "printWidth": 80,
+    "overrides": [
+      {
+        "files": "words/*.txt",
+        "options": {
+          "endOfLine": "cr"
+        }
+      }
+    ]
+  }
+}
