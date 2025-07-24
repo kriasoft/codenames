@@ -45,14 +45,16 @@ export type Emotion = (typeof emotions)[number];
 
 /**
  * Converts a number to a Emotion codename
+ *
  * @param input - The number to convert
- * @returns A Emotion name
+ * @returns An Emotion name
+ *
  * @example
  * ```typescript
  * import codename from "codenames/emotions-30";
- * codename(1234) // "love"
+ * codename(1234) // "hurt"
  * ```
  */
-const codename = createTypedCodename(emotions);
+export const codename = createTypedCodename(emotions);
 
 export default codename;

@@ -35,14 +35,16 @@ export type Food = (typeof food)[number];
 
 /**
  * Converts a number to a Food codename
+ *
  * @param input - The number to convert
  * @returns A Food name
+ *
  * @example
  * ```typescript
  * import codename from "codenames/food-20";
- * codename(1234) // "bread"
+ * codename(1234) // "pizza"
  * ```
  */
-const codename = createTypedCodename(food);
+export const codename = createTypedCodename(food);
 
 export default codename;

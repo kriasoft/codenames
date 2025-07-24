@@ -1,5 +1,6 @@
 node_modules/
 *.log
+*.local.md
 .env*
 .DS_Store
 dist/

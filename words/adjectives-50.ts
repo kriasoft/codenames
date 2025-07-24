@@ -65,14 +65,16 @@ export type Adjective = (typeof adjectives)[number];
 
 /**
  * Converts a number to a Adjective codename
+ *
  * @param input - The number to convert
- * @returns A Adjective name
+ * @returns An Adjective name
+ *
  * @example
  * ```typescript
  * import codename from "codenames/adjectives-50";
- * codename(1234) // "good"
+ * codename(1234) // "happy"
  * ```
  */
-const codename = createTypedCodename(adjectives);
+export const codename = createTypedCodename(adjectives);
 
 export default codename;

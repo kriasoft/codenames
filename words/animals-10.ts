@@ -25,14 +25,16 @@ export type Animal = (typeof animals)[number];
 
 /**
  * Converts a number to a Animal codename
+ *
  * @param input - The number to convert
- * @returns A Animal name
+ * @returns An Animal name
+ *
  * @example
  * ```typescript
  * import codename from "codenames/animals-10";
  * codename(1234) // "cat"
  * ```
  */
-const codename = createTypedCodename(animals);
+export const codename = createTypedCodename(animals);
 
 export default codename;

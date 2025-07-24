@@ -115,14 +115,16 @@ export type Element = (typeof elements)[number];
 
 /**
  * Converts a number to a Element codename
+ *
  * @param input - The number to convert
- * @returns A Element name
+ * @returns An Element name
+ *
  * @example
  * ```typescript
  * import codename from "codenames/elements-100";
- * codename(1234) // "gold"
+ * codename(1234) // "berkelium"
  * ```
  */
-const codename = createTypedCodename(elements);
+export const codename = createTypedCodename(elements);
 
 export default codename;

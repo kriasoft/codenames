@@ -35,14 +35,16 @@ export type Gem = (typeof gems)[number];
 
 /**
  * Converts a number to a Gem codename
+ *
  * @param input - The number to convert
  * @returns A Gem name
+ *
  * @example
  * ```typescript
  * import codename from "codenames/gems-20";
- * codename(1234) // "ruby"
+ * codename(1234) // "crystal"
  * ```
  */
-const codename = createTypedCodename(gems);
+export const codename = createTypedCodename(gems);
 
 export default codename;

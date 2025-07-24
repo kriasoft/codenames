@@ -45,14 +45,16 @@ export type Country = (typeof countries)[number];
 
 /**
  * Converts a number to a Country codename
+ *
  * @param input - The number to convert
  * @returns A Country name
+ *
  * @example
  * ```typescript
  * import codename from "codenames/countries-30";
- * codename(1234) // "china"
+ * codename(1234) // "russia"
  * ```
  */
-const codename = createTypedCodename(countries);
+export const codename = createTypedCodename(countries);
 
 export default codename;

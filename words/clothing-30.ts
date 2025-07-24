@@ -45,14 +45,16 @@ export type Clothing = (typeof clothing)[number];
 
 /**
  * Converts a number to a Clothing codename
+ *
  * @param input - The number to convert
  * @returns A Clothing name
+ *
  * @example
  * ```typescript
  * import codename from "codenames/clothing-30";
- * codename(1234) // "shirt"
+ * codename(1234) // "glove"
  * ```
  */
-const codename = createTypedCodename(clothing);
+export const codename = createTypedCodename(clothing);
 
 export default codename;

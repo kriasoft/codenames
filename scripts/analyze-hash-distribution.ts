@@ -2,6 +2,9 @@
 
 /**
  * Test script to compare hash distribution between simpleHash and fnv1a algorithms
+ *
+ * SPDX-FileCopyrightText: 2025-present Kriasoft
+ * SPDX-License-Identifier: MIT
  */
 
 // Simple hash implementation from proposal.js
