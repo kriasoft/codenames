@@ -115,14 +115,16 @@ export type City = (typeof cities)[number];
 
 /**
  * Converts a number to a City codename
+ *
  * @param input - The number to convert
  * @returns A City name
+ *
  * @example
  * ```typescript
  * import codename from "codenames/cities-100";
- * codename(1234) // "paris"
+ * codename(1234) // "utrecht"
  * ```
  */
-const codename = createTypedCodename(cities);
+export const codename = createTypedCodename(cities);
 
 export default codename;

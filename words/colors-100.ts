@@ -115,14 +115,16 @@ export type Color = (typeof colors)[number];
 
 /**
  * Converts a number to a Color codename
+ *
  * @param input - The number to convert
  * @returns A Color name
+ *
  * @example
  * ```typescript
  * import codename from "codenames/colors-100";
- * codename(1234) // "red"
+ * codename(1234) // "citrine"
  * ```
  */
-const codename = createTypedCodename(colors);
+export const codename = createTypedCodename(colors);
 
 export default codename;

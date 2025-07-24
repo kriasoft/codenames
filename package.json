@@ -1,6 +1,6 @@
 {
   "name": "codenames",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Converts numerical values into human-readable names following a specific theme (e.g., cities)",
   "license": "MIT",
   "author": "Konstantin Tarkus <hello@kriasoft.com>",
@@ -38,6 +38,18 @@
       "deno": "./index.ts",
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./all": {
+      "bun": "./words/all.ts",
+      "deno": "./words/all.ts",
+      "types": "./dist/words/all.d.ts",
+      "import": "./dist/words/all.js"
+    },
+    "./core": {
+      "bun": "./core/index.ts",
+      "deno": "./core/index.ts",
+      "types": "./dist/core/index.d.ts",
+      "import": "./dist/core/index.js"
     },
     "./adjectives": {
       "bun": "./words/adjectives-20.ts",

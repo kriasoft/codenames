@@ -65,14 +65,16 @@ export type Snack = (typeof snacks)[number];
 
 /**
  * Converts a number to a Snack codename
+ *
  * @param input - The number to convert
  * @returns A Snack name
+ *
  * @example
  * ```typescript
  * import codename from "codenames/snacks-50";
- * codename(1234) // "chips"
+ * codename(1234) // "grape"
  * ```
  */
-const codename = createTypedCodename(snacks);
+export const codename = createTypedCodename(snacks);
 
 export default codename;

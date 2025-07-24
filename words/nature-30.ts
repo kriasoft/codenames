@@ -45,14 +45,16 @@ export type Nature = (typeof nature)[number];
 
 /**
  * Converts a number to a Nature codename
+ *
  * @param input - The number to convert
  * @returns A Nature name
+ *
  * @example
  * ```typescript
  * import codename from "codenames/nature-30";
- * codename(1234) // "tree"
+ * codename(1234) // "leaf"
  * ```
  */
-const codename = createTypedCodename(nature);
+export const codename = createTypedCodename(nature);
 
 export default codename;
